@@ -1,8 +1,11 @@
 [gd_scene format=3 uid="uid://cgg8ex2vcsst8"]
 
+[ext_resource type="Script" uid="uid://ch7ctprh441l8" path="res://text_edit.gd" id="1_cshku"]
+
 [node name="Node2D" type="Node2D" unique_id=65706577]
 
 [node name="TextEdit" type="TextEdit" parent="." unique_id=1822234091]
 offset_right = 242.0
 offset_bottom = 217.0
 text = "Yay! It works!"
+script = ExtResource("1_cshku")
