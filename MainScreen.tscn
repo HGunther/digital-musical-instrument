@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cgg8ex2vcsst8"]
+
+[node name="Node2D" type="Node2D" unique_id=65706577]
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=1822234091]
+offset_right = 242.0
+offset_bottom = 217.0
+text = "Yay! It works!"
