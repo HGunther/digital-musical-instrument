@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://y7iqqre3k78v"]
+
+[ext_resource type="PackedScene" uid="uid://ysts5rvdg4kh" path="res://Scenes/stick_visuallizer.tscn" id="2_i8u74"]
+
+[node name="Node2D" type="Node2D" unique_id=65706577]
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=1822234091]
+offset_right = 371.0
+offset_bottom = 186.0
+text = "Yay! It works!"
+
+[node name="StickVisuallizer" parent="." unique_id=1511015544 instance=ExtResource("2_i8u74")]
+offset_left = 220.0
+offset_top = 316.0
+offset_right = 489.0
+offset_bottom = 435.0
+
+[node name="StickVisuallizer2" parent="." unique_id=1339535864 instance=ExtResource("2_i8u74")]
+offset_left = 925.0
+offset_top = 519.0
+offset_right = 925.0
+offset_bottom = 519.0

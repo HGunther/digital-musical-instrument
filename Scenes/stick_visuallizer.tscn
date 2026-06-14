@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://ysts5rvdg4kh"]
+
+[ext_resource type="Script" uid="uid://bbu605eu4gdmk" path="res://Scripts/stick_visuallizer.gd" id="1_y34p3"]
+
+[node name="StickVisuallizer" type="Control" unique_id=1864603243]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=527919135]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LeftStickContainer" type="Control" parent="HBoxContainer" unique_id=642624119]
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("1_y34p3")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/LeftStickContainer" unique_id=1298218351]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/LeftStickContainer/VBoxContainer" unique_id=1323960713]
+layout_mode = 2
+text = "Left Stick"
+horizontal_alignment = 1
+
+[node name="LeftStickVisualization" type="Control" parent="HBoxContainer/LeftStickContainer/VBoxContainer" unique_id=1534612841]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="RightStickContainer" type="Control" parent="HBoxContainer" unique_id=1955812604]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/RightStickContainer" unique_id=99946649]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/RightStickContainer/VBoxContainer" unique_id=246361163]
+layout_mode = 2
+text = "Right Stick"
+horizontal_alignment = 1
+
+[node name="RightStickVisualization" type="Control" parent="HBoxContainer/RightStickContainer/VBoxContainer" unique_id=569481570]
+layout_mode = 2
+size_flags_vertical = 3
